@@ -1,0 +1,184 @@
+/*全体のスタイル（CSSリセット用）*/
+* {
+    /* padding,borderが要素の中に入る */
+    box-sizing: border-box;
+}
+ul {
+    /* リストの・を消す */
+    list-style: none;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    /* 文字の下の線を消す */
+    text-decoration: none;
+}
+
+body {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #fff;
+    /* 後で綺麗に表示されてるのを確認したらinheritに変更 */
+    background-color: inherit;
+    position: absolute;
+    z-index: 10;
+}
+
+.header-logo {
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-nav ul {
+    display: flex;
+    padding: 22px 0;
+}
+
+.header-nav li {
+    margin-left: 55px;
+    font-size: 15px;
+}
+/* first-view */
+#first-view {
+    height: 770px;
+    background-image: url("../img/bg1.png");
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+.first-v-wrap {
+    padding: 285px 0 255px;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+}
+.first-v-title {
+    margin-bottom: 150px;
+    font-weight: bold;
+    font-size: 27px;
+}
+.first-v-title::after {
+    display: block;
+    content: "";
+    width: 100px;
+    margin: 20px auto 0;
+    border-top: 1px solid #fff;
+}
+.fa-door-open {
+    padding-right: 4px;
+}
+/* entry */
+#entry {
+    background-color: #fff;
+}
+.entry-wrap {
+    padding: 175px 0;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.entry-title {
+    margin-bottom: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #191919;
+}
+.entry-btn {
+    width: 320px !important;
+}
+
+/* about */
+
+/* footer */
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #191919;
+}
+
+.footer-logo {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+/* 共通パート */
+.first-v-btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(-90deg, #283c86, #06beb6);
+    box-shadow: 0px 5px #070707;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+
+.inner {
+    /* about-itemの横幅と感覚の合計 */
+    width: 1100px;
+    /* titleまでの幅 */
+    padding: 90px 0;
+    /* innerを画面の中央に */
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+.title-b {
+    font-weight: bold;
+}
+
+.title::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    margin-right: 20px;
+    border-top: 1px solid #191919;
+}
+
+.title::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    margin-left: 20px;
+    border-top: 1px solid #191919;
+}
