@@ -6,21 +6,15 @@ header {
     color: #fff;
     position: absolute;
     z-index: 20;
+    nav {
+        width: 45%;
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-nav {
-    width: 45%;
-
-    ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1.2rem;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+        }
     }
 }
 
