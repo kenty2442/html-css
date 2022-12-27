@@ -304,6 +304,65 @@ header nav ul {
   font-size: 1.3rem;
 }
 
+#news {
+  background-image: url("../img/bg2.png");
+  background-size: cover;
+}
+
+#news .title {
+  color: #fff;
+}
+
+#news .title::before, #news .title::after,
+#news .title ::after {
+  border-color: #fff;
+}
+
+.news-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-item {
+  width: 30.5%;
+}
+
+.news__img {
+  width: 100%;
+  height: 207px;
+}
+
+.news__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.news-content__day {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.news-content__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 8px 0 20px;
+}
+
+.news-content__intor {
+  font-style: 1.2rem;
+}
+
 #entry {
   height: 477px;
   width: 100%;
